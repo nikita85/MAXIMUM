@@ -98,8 +98,8 @@
 	font: 13px 'Open Sans',Arial,sans-serif;
 }
 
-.bx-wrapper2 .bx-pager.bx-default-pager a:hover,
-.bx-wrapper2 .bx-pager.bx-default-pager a.active {
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
 	background-position: -296px -100px;
 }
 .bx-wrapper2 .bx-pager.bx-default-pager a {
