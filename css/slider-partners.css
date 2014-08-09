@@ -1,0 +1,232 @@
+/**
+ * partSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://partslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of partCreative, LTD
+ * http://partcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+.slider-wrap-partners {
+	margin: 0 auto;
+	width: 980px;
+	background: green;
+	display: table;
+}
+.part-wrapper {
+	position: relative;
+	/*margin: 0 auto;*/
+	/*width: 680px;*/
+	/*padding: 30px 0 0 0px;*/
+	*zoom: 1;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.part-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+.part-wrapper .part-viewport {
+	/*background: #ccc;*/
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.part-wrapper .part-pager,
+.part-wrapper .part-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.part-wrapper .part-loading {
+	min-height: 50px;
+	background: url("../img/part_loader.gif") center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.part-wrapper .part-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+    display: none;
+}
+
+.part-wrapper .part-pager .part-pager-item,
+.part-wrapper .part-controls-auto .part-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.part-wrapper .part-pager.part-default-pager a {
+	background: url("../img/main-sprite.png") no-repeat top left;
+	background-position: -327px -100px;
+	display: block;
+	width: 21px;
+	height: 24px;
+	padding: 2px 0 0 0;
+	margin: 0 5px;
+	outline: 0;
+	color: #ffffff;
+	font: 13px 'Open Sans',Arial,sans-serif;
+}
+
+.part-wrapper .part-pager.part-default-pager a:hover,
+.part-wrapper .part-pager.part-default-pager a.active {
+	background-position: -296px -100px;
+}
+.part-wrapper2 .part-pager.part-default-pager a {
+	display: none;
+}
+
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.part-wrapper .part-prev {
+	left: -30px;
+	background: url("../img/main-sprite.png") no-repeat top left;
+	background-position: -1288px 0;
+	display: block;
+	width: 22px;
+	height: 22px;
+}
+
+.part-wrapper .part-next {
+	right: -40px;
+	background: url("../img/main-sprite.png") no-repeat top left;
+	background-position: -440px -100px;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+.part-wrapper .part-prev:hover {
+	background-position: -1256px 0;
+}
+
+.part-wrapper .part-next:hover {
+	background-position: -408px -100px;
+}
+
+.part-wrapper .part-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: 3px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.part-wrapper .part-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.part-wrapper .part-controls-auto {
+	text-align: center;
+}
+
+.part-wrapper .part-controls-auto .part-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url("../img/point.png") -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.part-wrapper .part-controls-auto .part-start:hover,
+.part-wrapper .part-controls-auto .part-start.active {
+	background-position: -86px 0;
+}
+
+.part-wrapper .part-controls-auto .part-stop {
+	display: block;
+	/*text-indent: -9999px;*/
+	color: #ffffff;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url("../img/point.png") -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.part-wrapper .part-controls-auto .part-stop:hover,
+.part-wrapper .part-controls-auto .part-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.part-wrapper .part-controls.part-has-controls-auto.part-has-pager .part-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.part-wrapper .part-controls.part-has-controls-auto.part-has-pager .part-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.part-wrapper .part-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.part-wrapper .part-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+.partslider li  h2 {
+	font: 700 25px/1 'Open Sans',Arial,sans-serif;
+	color: #ffffff;
+	margin: 25px 0 0 30px;
+}
+.partslider li p {
+	font: 14px 'Open Sans',Arial,sans-serif;
+	color: #ffffff;
+	/*background: #ddd;*/
+	line-height: 1.5;
+	margin: 0 0 0 30px;
+}

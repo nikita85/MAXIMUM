@@ -325,70 +325,64 @@ li:first-child:after {
 /*slider partners*/
 
 .slider1 {
-    background: url("../img/main-sprite.png") no-repeat top left;
-    background-position: 0 -100px;
+    background: url("../img/mii.png") no-repeat top left;
     display: block;
-    width: 88px;
-    height: 90px;
+    width: 150px;
+    height: 100px;
     cursor: pointer;
 }
 .slider1:hover {
-    background-position: -1951px 0;
+    background: url("../img/mii-active.png.png") no-repeat top left;
 }
 .slider2 {
-    background: url("../img/main-sprite.png") no-repeat top left;
-    background-position: -540px 0;
+    background: url("../img/1830.png") no-repeat top left;
     display: block;
-    width: 60px;
-    height: 71px;
+    width: 150px;
+    height: 100px;
     cursor: pointer;
 }
 .slider2:hover {
-    background-position: -470px 0;
+    background: url("../img/1830-active.png.png") no-repeat top left;
 }
 .slider3 {
-    background: url("../img/main-sprite.png") no-repeat top left;
-    background-position: -389px 0;
+    background: url("../img/1755.png") no-repeat top left;
     display: block;
-    width: 71px;
-    height: 71px;
+    width: 150px;
+    height: 100px;
     cursor: pointer;
 }
 .slider3:hover {
-    background-position: -308px 0;
+    background: url("../img/1755-active.png.png") no-repeat top left;
 }
 .slider4 {
-    background: url("../img/main-sprite.png") no-repeat top left;
-    background-position: -197px -100px;
+    background: url("../img/misis.png.png") no-repeat top left;
     display: block;
-    width: 89px;
-    height: 52px;
+    width: 150px;
+    height: 100px;
     cursor: pointer;
 }
 .slider4:hover {
-    background-position: -98px -100px;
+    background: url("../img/misis-active.png.png") no-repeat top left;
 }
 .slider5 {
-    background: url("../img/main-sprite.png") no-repeat top left;
-    background-position: -559px -100px;
+    background: url("../img/rnimu.png.png") no-repeat top left;
     display: block;
-    width: 77px;
-    height: 75px;
+    width: 150px;
+    height: 100px;
     cursor: pointer;
 }
 .slider5:hover {
-    background-position: -472px -100px;
+    background: url("../img/rnimu-active.png.png") no-repeat top left;
 }
 .slider6 {
-    background: url("../img/main-sprite.png") no-repeat top left;
-    background-position: -1853px 0;
+    background: url("../img/mgimo.png.png") no-repeat top left;
     display: block;
-    width: 88px;
-    height: 68px;
+    width: 150px;
+    height: 100px;
     cursor: pointer;
 }
 .slider6:hover {
-    background-position: -1755px 0;
+    background: url("../img/mgimo-active.png.png") no-repeat top left;
 }
 /*Page2 styles*/
 .technique {
