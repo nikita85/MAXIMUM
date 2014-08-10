@@ -72,7 +72,7 @@ header {
 .header {
     margin: 0 auto;
     width: 980px;
-    height: 235px;
+    /*height: 235px;*/
     /*background: #FFE680;*/
 }
 .top-header-border {
@@ -87,6 +87,7 @@ header {
     width: 100%;
     height: 347px;
     background-size: cover;
+    margin: 83px 0 0 0;
 }
 .top-header {
     display: table;
@@ -252,9 +253,15 @@ ul.nav a {
     margin: 23px 0 0 0;
 }
 .slider-our-partners {
-    text-align: center;
+    /*text-align: center;*/
     margin: 0 auto 50px;
     width: 980px;
+    position: relative;
+}
+.slider-wrap-partners > h3 {
+    font: 700 16px 'Open Sans',Arial,sans-serif;
+    color: #515151;
+    margin: 30px 0 20px 0;
 }
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -276,42 +283,48 @@ ul.nav a {
 .content {
     padding: 0 270px 0 0;
 }
-.training-block {
-    /*width: 639px;*/
+.training-main-block {
+    width: 671px;
     height: 390px;
     background: #f5f5f5;
     display: table;
-    text-align: center;
     padding: 20px;
     border-radius: 5px;
     margin: 0 0 70px 0;
 }
-.training-right, .training-center, .training-left {
-    display: table-cell;
-    width: 33%;
+.training-block {
+    display: inline-block;
+    width: 221px;
+    min-height: 390px;
+    text-align: center;
+    /*background: sandybrown;*/
 }
-.training-right h3, .training-center h3, .training-left h3 {
+.training-block:nth-last-of-type(2) {
+    border-right: 1px solid #cfbbad;
+    border-left: 1px solid #cfbbad;
+}
+.training-block h3 {
     font: 600 20px 'Open Sans',Arial,sans-serif;
     color: #ff6600;
     height: 70px;
-    width: 206px;
+    /*width: 206px;*/
     margin: 20px 0 0 0;
 }
-.training-right p, .training-center p, .training-left p {
+.training-block p {
     font: 13px 'Open Sans',Arial,sans-serif;
     color: #333333;
-    height: 120px;
+    height: 90px;
 }
-.training-right > a, .training-center > a, .training-left > a {
+.training-block > a {
     font: 13px 'Open Sans',Arial,sans-serif;
     color: #333333;
     -moz-text-decoration-line: underline !important;
     -moz-text-decoration-style: dashed !important;
 }
-.training-right a:hover, .training-center a:hover, .training-left a:hover {
+.training-block a:hover {
     color: #ff6600;
 }
-.training-center > p > a {
+.training-block > p > a {
     color: #ff6600;
     text-decoration: underline;
 }
@@ -321,24 +334,24 @@ ul.nav a {
 
 }
 .content-events {
-
+    margin: 30px 0 0 0;
  }
 .content-events h1  {
     font: 600 30px 'Open Sans',Arial,sans-serif;
     color: #515151;
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
 }
 .school-events {
     width: 100%;
-    height: 500px;
+    height: 480px;
     display: table;
     /*background: gold;*/
 
 }
 .master-klass-block {
     width: 300px;
-    height: 430px;
+    min-height: 430px;
     display: inline-block;
     background: #f5f5f5;
     border-radius: 5px;
@@ -352,11 +365,13 @@ ul.nav a {
     color: #ff6600;
     padding: 0 10px 0 20px;
     height: 100px;
+    margin: 10px 0 0 0;
 }
 .master-klass-block p {
     font: 13px 'Open Sans',Arial,sans-serif;
     color: #333333;
-    height: 93px;
+    height: 84px;
+    padding: 0 5px 5px 5px;
 }
 .master-klass-block span {
     font-weight: 700;
@@ -380,6 +395,8 @@ ul.nav a {
     display: block;
     width: 300px;
     height: 200px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 .img-events-block {
     position: relative;
@@ -398,6 +415,13 @@ ul.nav a {
     background: url("../img/img-hover.png") no-repeat center center;
     z-index: 1;
 }
+/*calendar-slider-events*/
+.calendar-slider-events {
+    height: 131px;
+    margin: 0 0 70px 0;
+    position: relative;
+}
+
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
 .right-sidebar {
@@ -411,6 +435,7 @@ ul.nav a {
     position: relative;
     border: 1px solid #cfbbad;
     border-radius: 5px;
+    padding: 20px 0 15px 0;
 }
 .school-participants p {
     position: absolute;
@@ -804,7 +829,95 @@ a:link, a:visited, ins {
     background: url("../img/mgimo-active.png") no-repeat center center;
 }
 .block1 {
-    background: greenyellow;
+    background: #f5f5f5;
+    border-radius: 5px;
     height: 120px;
     margin: 0 0 30px 0;
+}
+.text-block {
+    position: relative;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+.rst {
+    width: 100px;
+    height: 120px;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+.rst > p {
+    font: 700 11px 'Open Sans',Arial,sans-serif;
+    color: #515151;
+    padding: 40px 0 0 10px;
+}
+.events-calendar {
+    background: url("../img/events-calendar-bg.png") no-repeat center center;
+    width: 134px;
+    height: 105px;
+}
+.events-calendar > h4 {
+    font: 600 13px 'Open Sans',Arial,sans-serif;
+    color: #ff6600;
+    height: 58px;
+    padding: 5px 0 0 10px;
+}
+.events-calendar > p {
+    font: 11px 'Open Sans',Arial,sans-serif;
+    color: #666666;
+    padding: 0 0 0 10px;
+}
+
+
+#owl-demo .item{
+    background: #3fbf79;
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+.customNavigation{
+    text-align: center;
+}
+
+  .customNavigation a{
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+.owl-pagination {
+    display: none;
+}
+.prev {
+    background: url("../img/left-arrow.png") no-repeat center center;
+    width: 22px;
+    height: 22px;
+    display: block;
+    text-indent: -9999px;
+    cursor: pointer;
+    position: absolute;
+    top: 110px;
+}
+.prev:hover {
+    background: url("../img/left-arrow-active.png") no-repeat center center;
+}
+.next {
+    background: url("../img/right-arrrow.png") no-repeat center center;
+    width: 22px;
+    height: 22px;
+    display: block;
+    text-indent: -9999px;
+    cursor: pointer;
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+.next:hover {
+    background: url("../img/right-arrrow-active.png") no-repeat center center;
 }
