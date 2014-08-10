@@ -786,7 +786,7 @@ ul.nav a {
 }
 .partners-block {
     margin: 0 auto;
-    width: 1000px;
+    width: 980px;
     height: 340px;
     background: #f5f5f5;
     border-radius: 5px;
@@ -845,7 +845,7 @@ ul.nav a {
     height: 140px;
     border-radius: 10px;
     background: #f9f9f9;
-    margin-right: 22px;
+    margin-right: 25px;
     background: -moz-linear-gradient(top, #f9f9f9 0%, #e2e2e2 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e2e2e2));
     background: -webkit-linear-gradient(top, #f9f9f9 0%,#e2e2e2 100%);
