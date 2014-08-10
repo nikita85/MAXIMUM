@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MAXIMUM</title>
+    <!--<link rel="stylesheet" href="css/template.css">-->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!--<link rel="stylesheet" href="css/jquery.bxslider.css">-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300italic,300,700' rel='stylesheet' type='text/css'>
     <!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
 </head>
@@ -44,21 +46,85 @@
     </div>
 </header><!-- header-->
 <div class="wrapper">
-
     <div class="middle">
-
-        <div class="container">
-            <main class="content">
-
-            </main><!-- .content -->
-        </div><!-- .container-->
-
-        <aside class="right-sidebar">
-
-        </aside><!-- .right-sidebar -->
-
-    </div><!-- .middle-->
-
+        <div class="wrapper-events">
+            <div class="content-events">
+                <h1>Бесплатные мероприятия в школах</h1>
+                <div class="school-events">
+                    <div class="master-klass-block">
+                        <div class="img-events-block"><img src="img/photo1.jpg" alt=""/>
+                            <h3>Мастер-класс по ОГЭ (ГИА-9)</h3>
+                            <p><span>Цель мастер-классов:</span> усилить мотивацию учеников  при подготовке к ОГЭ, а также рассказать, как использовать оставшееся до экзамена время максимально эффективно.
+                            </p>
+                            <a href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="master-klass-block">
+                        <div class="img-events-block"><img src="img/photo2.jpg" alt=""/>
+                            <h3>Мастер-класс по ЕГЭ (ГИА-11)</h3>
+                            <p><span>Цель мастер-классов:</span> усилить мотивацию учеников  при подготовке к ОГЭ, а также рассказать, как использовать оставшееся до экзамена время максимально эффективно.
+                            </p>
+                            <a href="#">Узнать больше</a></div>
+                    </div>
+                    <div class="master-klass-block">
+                        <div class="img-events-block"><img src="img/photo3.jpg" alt=""/>
+                            <h3>Мастер-класс для родителей 9-ти и 11-классников</h3>
+                            <p><span>Цель мастер-класса:</span>  вовлечь родителей в процесс подготовки детей к экзаменам, а также повысить комплексную мотивацию родителей и детей при подготовке к ЕГЭ и ОГЭ.</p>
+                            <a href="#">Узнать больше</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="calendar-slider-events">
+            <div class="text-block">
+                <div class="rst"><p>Предстоящие<br> события</p></div>
+                <div class="your-class2 slick-slider2">
+                    <div><div class="events-calendar">
+                        <h4>Мастер-класс по ЕГЭ для выпускников</h4>
+                        <p>Школа 671<br>
+                            15 марта, 12.00</p>
+                    </div></div>
+                    <div><div class="events-calendar">
+                        <h4>Мастер-класс для родителей</h4>
+                        <p>Школа 671<br>
+                            15 марта, 12.00</p>
+                    </div></div>
+                    <div><div class="events-calendar">
+                        <h4>Мастер-класс для поступающих</h4>
+                        <p>Школа 671<br>
+                            15 марта, 12.00</p>
+                    </div></div>
+                    <div><div class="events-calendar">
+                        <h4>Мастер-класс по ЕГЭ для выпускников</h4>
+                        <p>ГБОУ СОШ №535<br>
+                            15 марта, 12.00</p>
+                    </div></div>
+                    <div><div class="events-calendar">
+                        <h4>Мастер-класс по ЕГЭ для выпускников</h4>
+                        <p>Школа 671<br>
+                            15 марта, 12.00</p>
+                    </div></div>
+                    <div><div class="events-calendar">
+                        <h4>Мастер-класс для родителей</h4>
+                        <p>Школа 671<br>
+                            15 марта, 12.00</p>
+                    </div></div>
+                    <div><div class="events-calendar">
+                        <h4>Мастер-класс для поступающих</h4>
+                        <p>Школа 671<br>
+                            15 марта, 12.00</p>
+                    </div></div>
+                    <div><div class="events-calendar">
+                        <h4>Мастер-класс по ЕГЭ для выпускников</h4>
+                        <p>ГБОУ СОШ №535<br>
+                            15 марта, 12.00</p>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
 </div><!-- .wrapper -->
 <footer>
     <div class="footer_wrap">
@@ -125,9 +191,12 @@
 <!--include script-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script src="js/jquery.bxslider.js" type="text/javascript"></script>
+<script src="js/jquery.flexslider.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
 <script src="plugins/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="plugins/jquery.fitvids.js" type="text/javascript"></script>
 <script src="js/1.js" type="text/javascript"></script>
 <script src="js/2.js" type="text/javascript"></script>
+<script src="js/3.js" type="text/javascript"></script>
 </body>
 </html>
