@@ -673,7 +673,7 @@ ul.nav a {
 
 /*Page3 style*/
 .reviews-results {
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     text-align: center;
     color: #515151;
     font: 30px 'Open Sans',Arial,sans-serif;
