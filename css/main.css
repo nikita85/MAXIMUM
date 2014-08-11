@@ -150,7 +150,7 @@ ul.nav li {
 ul.nav li:nth-last-of-type(3) {
     vertical-align: middle;
 }
-ul.nav li:hover {
+ul.nav li:hover, ul.nav li.active {
     background: #a89284;
 }
 ul.nav li:before {
@@ -215,17 +215,18 @@ ul.nav a {
     /*background:("../img/apply-bg.jpg") no-repeat center center;*/
     border-radius: 4px;
     background: #f2f2f2;
-    border: 4px solid #ccc;
+    border: 4px solid #f4f4f4;
     margin: 55px 0 0 0;
     float: right;
     text-align: center;
+    display: inline-block;
 }
 .apply h2 {
     font: 20px 'Open Sans',Arial,sans-serif;
     color: #333333;
     line-height: 1.2;
     text-transform: uppercase;
-    margin: 20px 0 0 0;
+    margin: 20px 18px 0 18px;
 }
 .apply p {
     font: 13px 'Open Sans',Arial,sans-serif;
@@ -389,7 +390,7 @@ ul.nav a {
 .master-klass-block span {
     font-weight: 700;
 }
-.master-klass-block  a {
+.master-klass-block  a, .motivation-slider-text a {
     font: 13px 'Open Sans',Arial,sans-serif;
     color: #333333;
     -moz-text-decoration-line: underline !important;
@@ -845,7 +846,7 @@ ul.nav a {
     height: 140px;
     border-radius: 10px;
     background: #f9f9f9;
-    margin-right: 25px;
+    margin-right: 22px;
     background: -moz-linear-gradient(top, #f9f9f9 0%, #e2e2e2 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e2e2e2));
     background: -webkit-linear-gradient(top, #f9f9f9 0%,#e2e2e2 100%);
@@ -881,7 +882,170 @@ ul.nav a {
 .info-block span {
     font-weight: 700;
 }
-
+/*new page review*/
+.new-review {
+    margin: 0 auto;
+    width: 980px;
+    font: 600 30px 'Open Sans',sans-serif;
+    color: #515151;
+    text-align: center;
+    height: 80px;
+    line-height: 100px;
+}
+.motivation {
+    position: relative;
+    margin: 0 auto;
+    background: url("../img/motivation-gb.png") no-repeat center center;
+    /*width: 980px;*/
+    height: 230px;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 20px;
+}
+.motivation-slider-text {
+    float: left;
+    width: 753px;
+}
+.motivation-slider-text > h2 {
+    font: 600 30px 'Open Sans',Arial,sans-serif;
+    color: #ffffff;
+    padding: 0 80px 0 0;
+    line-height: 1.2;
+}
+.motivation-slider-text span {
+    position: absolute;
+    bottom: 22px;
+    right: 259px;
+    font: 600 14px 'Open Sans',Arial,sans-serif;
+    color: #ffffff;
+    text-align: right;
+    /*padding: 0 200px 0 30px;*/
+    line-height: 1.2;
+}
+.motivation-slider-text p {
+    position: relative;
+    font: italic 600 20px 'Open Sans',Arial,sans-serif;
+    color: #ffec92;
+    padding: 40px 40px 0 30px;
+    line-height: 1.2;
+}
+.motivation-slider-text p:before {
+    position: absolute;
+    top: 0;
+    left:0;
+    content: "”";
+    color: #ffec92;
+    font: 600 50px 'Open Sans',Arial,sans-serif;
+}
+.motivation-slider-text a {
+    color: #ffffff;
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+}
+.motivation-slider-text a:hover {
+    color: #afafaf;
+}
+.motivation-apply {
+    margin: 0;
+    width: 350px;
+    height: 221px;
+    border: 4px solid #f5f5f5;
+}
+.motivation-apply h2 {
+    margin: 20px 0 0 0;
+}
+.border {
+    border: 1px solid #d5d5d5;
+    height: 219px;
+}
+.motivation-slider-image {
+    background: url("../img/image-slider-frame.png") no-repeat center center;
+    width: 187px;
+    height: 177px;
+    overflow: hidden;
+    position: relative;
+}
+.slider-image img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    margin: auto;
+}
+.motivation-info-block {
+    margin: 40px auto 40px;
+    width: 980px;
+    height: 230px;
+    /*background: #ddd;*/
+}
+.left-info-block {
+    height: 230px;
+    width: 590px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+.left-info-block h2 {
+    font: 600 20px 'Open Sans',Arial,sans-serif;
+    color: #515151;
+    padding: 30px 50px 20px;
+}
+.left-info-block span {
+    color: #ff6600;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.left-info-block p {
+    font: 14px 'Open Sans',Arial,sans-serif;
+    color: #515151;
+    padding: 0 40px;
+}
+.motivation-review {
+    margin: 40px auto 70px;
+    width: 980px;
+    /*height: 150px;*/
+    /*background: #ccc;*/
+}
+.motivation-review h3 {
+    font: 700 16px 'Open Sans',Arial,sans-serif;
+    color: #515151;
+    margin: 0 0 20px 0;
+}
+.motivation-review-imgg {
+    display: inline-block;
+    position: relative;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    margin: 0 36px 0 0;
+    height: 138px;
+    width: 100px;
+}
+.motivation-review-imgg img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    /*margin: 5px 0 0 0;*/
+}
+.motivation-review-imgg:last-child {
+    margin:0;
+}
+.motivation-review-imgg:hover {
+    border-color: #fe7324;
+}
+.motivation-review-imgg:hover:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:53px;
+    left:34px;
+    background: url("../img/steklo.png") no-repeat center center;
+    width: 33px;
+    height: 34px;
+    cursor: pointer;
+}
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
 .right-sidebar {
@@ -986,6 +1150,7 @@ ul.nav a {
     height: 390px;
     margin: -390px auto 0;
     background-color: #434343;
+    position: relative;
 }
 .footer {
     height: 390px;

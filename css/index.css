@@ -137,7 +137,7 @@ ul.nav li {
 ul.nav li:nth-last-of-type(3) {
     vertical-align: middle;
 }
-ul.nav li:hover {
+ul.nav li:hover, ul.nav li.active {
     background: #a89284;
 }
 ul.nav li:before {
@@ -202,17 +202,18 @@ ul.nav a {
     /*background:("../img/apply-bg.jpg") no-repeat center center;*/
     border-radius: 4px;
     background: #f2f2f2;
-    border: 4px solid #ccc;
+    border: 4px solid #f4f4f4;
     margin: 55px 0 0 0;
     float: right;
     text-align: center;
 }
+
 .apply h2 {
     font: 20px 'Open Sans',Arial,sans-serif;
     color: #333333;
     line-height: 1.2;
     text-transform: uppercase;
-    margin: 20px 0 0 0;
+    margin: 20px 18px 0 18px;
 }
 .apply p {
     font: 13px 'Open Sans',Arial,sans-serif;
@@ -251,6 +252,10 @@ ul.nav a {
 .apply-btn:active {
     box-shadow: none;
     margin: 23px 0 0 0;
+}
+.border {
+    border: 1px solid #d5d5d5;
+    height: 242px;
 }
 .slider-our-partners {
     /*text-align: center;*/
@@ -528,6 +533,7 @@ ul.nav a {
     height: 390px;
     margin: -390px auto 0;
     background-color: #434343;
+    position: relative;
 }
 .footer {
     height: 390px;
