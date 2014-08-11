@@ -8,3 +8,7 @@
             }
         }
 });
+ $(".popup").fancybox({
+     openEffect  : 'none',
+     closeEffect : 'none',
+ });
