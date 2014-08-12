@@ -6,6 +6,8 @@ $(function(){
         speed: 1000,
         pause: 5000,
         controls: false,
+        video: true,
+        useCSS: false,
         slideWidth: 1100
     });
  });
