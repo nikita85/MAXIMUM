@@ -923,7 +923,7 @@ ul.nav a {
     font-weight: 700;
 }
 /*new page review*/
-.new-review {
+.new-review, .application-text {
     margin: 0 auto;
     width: 980px;
     font: 600 30px 'Open Sans',sans-serif;
@@ -932,6 +932,10 @@ ul.nav a {
     margin: 20px 0 0 0;
     /*height: 80px;*/
     /*line-height: 100px;*/
+}
+.application-text {
+    text-align: left;
+    margin: 20px 0 40px 30px;
 }
 .motivation {
     position: relative;
@@ -1094,6 +1098,105 @@ ul.nav a {
     height: 34px;
     cursor: pointer;
 }
+
+/*application-form-page*/
+.wrapper-application-form {
+    position: relative;
+    width: 726px;
+    height: 460px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin: 0 0 40px 0;
+}
+
+.main-form {
+    text-align: right;
+    margin: 30px 70px 20px 0;
+}
+.fieldss {
+    margin: 0 0 10px;
+}
+.error {
+    margin-right: 317px;
+    color: #e17272;
+    font: 12px 'Open Sans',Arial,sans-serif;
+    height: 20px;
+    display: none;
+}
+.small-error {
+    margin-right: 10px;
+}
+.test{
+    position: relative;
+    display: inline-block;
+    /*margin-right: 25px;*/
+    height: 65px;
+}
+.test-lable {
+    display: inline-block;
+    height: 45px;
+    line-height: 46px;
+    vertical-align: top;
+}
+.test22 {
+    display: inline-block;
+    margin: 0 0 0 25px;
+}
+.test:last-child {
+    margin:0;
+}
+.big-field-input {
+    outline: none;
+    border:none;
+    border: 1px solid #cccccc;
+    height: 45px;
+    width: 492px;
+    background: #ffffff;
+    padding: 0 0 0 10px;
+    font: 18px 'Open Sans',Arial,sans-serif;
+    color: #333333;
+}
+.small-field-input {
+    outline: none;
+    border:none;
+    border: 1px solid #cccccc;
+    width: 180px;
+    height: 45px;
+    background: #ffffff;
+    padding: 0 0 0 10px;
+    font: 18px 'Open Sans',Arial,sans-serif;
+    color: #333333;
+}
+/*.field-input-error {
+    border-color: #e17272;
+}*/
+.lable-style-text {
+    font: 700 14px 'Open Sans',Arial,sans-serif;
+    color: #666666;
+    margin-right: 10px;
+}
+.legend {
+    font: 12px 'Open Sans',Arial,sans-serif;
+    color: #999999;
+    padding: 20px 0 0 20px;
+}
+.legend span {
+    font: 700 13px 'Open Sans',Arial,sans-serif;
+    color: #666666;
+}
+::-webkit-input-placeholder {color:#999999; font: 18px 'Open Sans',Arial,sans-serif;line-height: 40px;}
+::-moz-placeholder          {color:#999999; font: 18px 'Open Sans',Arial,sans-serif;line-height: 40px;}/* Firefox 19+ */
+:-moz-placeholder           {color:#999999; font: 18px 'Open Sans',Arial,sans-serif;line-height: 40px;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#999999; font: 18px 'Open Sans',Arial,sans-serif;line-height: 40px;}
+:focus::-webkit-input-placeholder {color: transparent;}
+:focus::-moz-placeholder          {color: transparent;}
+:focus:-moz-placeholder           {color: transparent;}
+:focus:-ms-input-placeholder      {color: transparent;}
+.form-btn {
+    bottom: 20px;
+    left: 152px;
+    position: absolute;
+}
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
 .right-sidebar {
@@ -1103,21 +1206,26 @@ ul.nav a {
     position: relative;
     /*background: #FFACAA;*/
 }
-.school-participants {
+.right-sidebar-width {
+    width: 210px;
+    margin-left: -220px;
+}
+.school-participants, .school-participants-width {
     position: relative;
     border: 1px solid #cfbbad;
     border-radius: 5px;
     padding: 20px 0 15px 0;
+    height: 422px;
 }
-.school-participants p {
+.school-participants p, .school-participants-width p {
     position: absolute;
-    top: -22px;
-    left: 25px;
+    top: -24px;
+    left: 11px;
     background: #ffffff;
     font: 700 16px 'Open Sans',Arial,sans-serif;
     color: #515151;
     text-align: center;
-    padding: 0 27px 0 27px;
+    padding: 0 20px 0 20px;
 }
 .schools-block {
     display: table;
