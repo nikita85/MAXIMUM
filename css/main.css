@@ -1130,7 +1130,7 @@ ul.nav a {
     position: relative;
     display: inline-block;
     /*margin-right: 25px;*/
-    height: 65px;
+    height: 63px;
 }
 .test-lable {
     display: inline-block;
@@ -1149,7 +1149,7 @@ ul.nav a {
     outline: none;
     border:none;
     border: 1px solid #cccccc;
-    height: 45px;
+    height: 43px;
     width: 492px;
     background: #ffffff;
     padding: 0 0 0 10px;
@@ -1161,7 +1161,7 @@ ul.nav a {
     border:none;
     border: 1px solid #cccccc;
     width: 180px;
-    height: 45px;
+    height: 43px;
     background: #ffffff;
     padding: 0 0 0 10px;
     font: 18px 'Open Sans',Arial,sans-serif;
@@ -1193,7 +1193,7 @@ ul.nav a {
 :focus:-moz-placeholder           {color: transparent;}
 :focus:-ms-input-placeholder      {color: transparent;}
 .form-btn {
-    bottom: 20px;
+    bottom: 28px;
     left: 152px;
     position: absolute;
 }
