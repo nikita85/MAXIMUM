@@ -2,7 +2,7 @@ $(function(){
         $('.bxslider').bxSlider({
         minSlides: 2,
         maxSlides: 2,
-        auto: true,
+        auto: false,
         speed: 1000,
         pause: 5000,
         controls: false,

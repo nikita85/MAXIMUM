@@ -23,7 +23,7 @@
 	position: relative;
 	/*margin: 0 auto;*/
 	/*width: 680px;*/
-	padding: 30px 0 0 0px;
+	padding: 35px 0 0 0px;
 	*zoom: 1;
 	display: table-cell;
 	vertical-align: top;
@@ -33,7 +33,12 @@
 	max-width: 100%;
 	display: block;
 }
-
+.slider-img {
+    margin: 6px 0 0 27px;
+}
+.slider-img2 {
+    margin: 13px 0 0 0;
+}
 /** THEME
 ===================================*/
 .bx-wrapper .bx-viewport {
@@ -50,7 +55,8 @@
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
-	bottom: -30px;
+	bottom: 25px;
+    left: 140px;
 	width: 100%;
 }
 
@@ -217,15 +223,78 @@
 	font-size: .85em;
 	padding: 10px;
 }
-.bxslider li  h2 {
-	font: 700 25px/1 'Open Sans',Arial,sans-serif;
-	color: #ffffff;
-	margin: 25px 0 0 30px;
+/*custom styles*/
+.slider-text-side {
+	margin: 0 0 0 30px;
 }
-.bxslider li p {
+.slider-text-side2 {
+	padding: 25px 0 0 0;
+}
+.slider-text-side3 {
+	margin-right: 20px;
+	position: relative;
+	right: 23px;
+}
+.slider-text-side4 {
+	margin: 16px 0 0 0;
+}
+.slider-text-side h2, .slider-text-side2 h2, .slider-text-side3 h2, .slider-text-side4 h2 {
+	font: 700 21px/1 'Open Sans',Arial,sans-serif;
+	color: #ffffff;
+	padding: 10px 0 20px 0px;
+}
+.slider-text-side2 span {
+	font: 700 16px/1 'Open Sans',Arial,sans-serif;
+    color: #ff7500;
+}
+.slider-text-side2 h2, .slider-text-side3 h2, .slider-text-side4 h2 {
+	font-size: 25px;
+}
+.slider-text-side3 h2 {
+	padding: 27px 0 7px 0;
+}
+.slider-text-side4 h2 {
+	padding: 10px 0 12px 0;
+}
+.slider-text-side p, .slider-text-side2 p, .slider-text-side3 p {
 	font: 14px 'Open Sans',Arial,sans-serif;
 	color: #ffffff;
-	/*background: #ddd;*/
 	line-height: 1.5;
-	margin: 0 0 0 30px;
+}
+.slider-text-side3 p {
+	font-size: 13px;
+    font-style: italic;
+    line-height: 1.2;
+    padding: 21px 0 0 40px;
+    width: 316px;
+}
+.slider-text-side3 p:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 160px;
+    left: 23px;
+    background: url("../img/quotes.png") no-repeat center center;
+    width: 12px;
+    height: 12px;
+}
+.slider-list {
+    margin: 5px 0 0 0;
+}
+.slider-list li {
+    position: relative;
+    font: 14px 'Open Sans',Arial,sans-serif;
+    color: #ffffff;
+    /*line-height: 1.5;*/
+    padding: 5px 0 0 22px;
+}
+.slider-list li:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 7px;
+    left: 0;
+    background: url("../img/okk.png") no-repeat center center;
+    width: 14px;
+    height: 14px;
 }
