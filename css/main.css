@@ -163,8 +163,6 @@ header { position: relative }
 .header {
     margin: 0 auto;
     width: 980px;
-    /*height: 235px;*/
-    /*background: #FFE680;*/
 }
 .top-header-border {
     height: 8px;
@@ -178,7 +176,6 @@ header { position: relative }
     width: 100%;
     height: 347px;
     background-size: cover;
-    /*margin: 83px 0 0 0;*/
 }
 .head-margin {
     margin: 83px 0 0 0;
@@ -283,7 +280,6 @@ ul.nav a {
 .apply {
     width: 245px;
     height: 245px;
-    /*background: ("../img/apply-bg.jpg") no-repeat center center;*/
     border-radius: 4px;
     background: #f2f2f2;
     border: 4px solid #f4f4f4;
@@ -369,7 +365,6 @@ ul.nav a {
     height: 390px;
     background: #f5f5f5;
     display: table;
-    /*padding: 20px;*/
     padding: 20px 0;
     border-radius: 5px;
     margin: 0 0 70px 0;
@@ -399,15 +394,13 @@ ul.nav a {
     margin: 20px 0 0 0;
     padding: 0 8px;
 }
-.training-block p {
+.training-block p, .training-block > a  {
     font: 13px 'Open Sans',Arial,sans-serif;
     color: #333333;
     height: 90px;
     padding: 0 8px;
 }
 .training-block > a {
-    font: 13px 'Open Sans',Arial,sans-serif;
-    color: #333333;
     -moz-text-decoration-line: underline !important;
     -moz-text-decoration-style: dashed !important;
 }
@@ -419,7 +412,7 @@ ul.nav a {
 /*first page*/
 .wrapper-events { /*text-align: center;_NO__DOTCOMMA__AFTER__*/ }
 .content-events { margin: 20px 0 0 0 }
-.content-events h1 {
+.content-events h1, .technique, .reviews-results, .vantage-text-block > h2, .application-text, .new-review {
     font: 600 30px 'Open Sans',Arial,sans-serif;
     color: #515151;
     text-align: center;
@@ -429,7 +422,6 @@ ul.nav a {
     width: 100%;
     height: 486px;
     display: table;
-    /*background: gold;*/
 }
 .master-klass-block {
     width: 300px;
@@ -447,7 +439,6 @@ ul.nav a {
     color: #ff6600;
     padding: 0 10px 0 20px;
     height: 100px;
-    /*margin: 10px 0 0 0;*/
 }
 .master-klass-block p {
     font: 13px 'Open Sans',Arial,sans-serif;
@@ -688,9 +679,6 @@ span.size {
 /*Page2 styles*/
 .technique {
     margin: 30px 0 25px 0;
-    text-align: center;
-    color: #515151;
-    font: 600 30px 'Open Sans',Arial,sans-serif;
 }
 .technique-block {
     margin: 0 auto;
@@ -769,9 +757,6 @@ span.size {
 /*Page3 style*/
 .reviews-results {
     margin: 20px 0 30px 0;
-    text-align: center;
-    color: #515151;
-    font: 600 30px 'Open Sans',Arial,sans-serif;
 }
 .technique-block { text-align: center }
 .technique-block > h2 {
@@ -816,7 +801,6 @@ span.size {
     margin: 30px auto;
     width: 900px;
     height: 200px;
-    /*background: #ccc;*/
 }
 .reviewed > h3 {
     font: 700 16px 'Open Sans',Arial,sans-serif;
@@ -826,7 +810,6 @@ span.size {
 .review-icon {
     width: 140px;
     height: 180px;
-    /*background: green;*/
     display: inline-block;
     vertical-align: bottom;
     text-align: center;
@@ -914,9 +897,6 @@ span.size {
     margin: 30px 0 0 0;
 }
 .vantage-text-block > h2 {
-    font: 600 30px 'Open Sans',Arial,sans-serif;
-    color: #515151;
-    text-align: center;
     margin: 40px 0 0 0;
 }
 .info-block {
@@ -977,38 +957,33 @@ span.size {
 .application-text {
     margin: 0 auto;
     width: 980px;
-    font: 600 30px 'Open Sans',Arial,sans-serif;
-    color: #515151;
     text-align: center;
-    margin: 20px 0 0 0;
-    /*height: 80px;*/
-    /*line-height: 100px;*/
-}
-.application-text {
-    text-align: left;
     margin: 30px 0 40px 25px;
+}
+.left-side-text {
+    text-align: left;
 }
 .motivation {
     position: relative;
     margin: 0 auto;
     background: url("../img/motivation-gb.png") no-repeat center center;
-    /*width: 980px;*/
     height: 230px;
     background-size: cover;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 20px 20px 40px;
     overflow: hidden;
 }
 .motivation-slider-text {
     float: left;
-    width: 753px;
+    width: 735px;
     height: 230px;
 }
 .motivation-slider-text > h2 {
     font: 600 30px 'Open Sans',Arial,sans-serif;
     color: #ffffff;
-    padding: 0 80px 0 0;
+    margin: 15px 0 0 0;
     line-height: 1.2;
+    text-align: left;
 }
 .motivation-slider-text span {
     position: absolute;
@@ -1017,7 +992,6 @@ span.size {
     font: 600 14px 'Open Sans',Arial,sans-serif;
     color: #ffffff;
     text-align: right;
-    /*padding: 0 200px 0 30px;*/
     line-height: 1.2;
 }
 .motivation-slider-text p {
@@ -1036,10 +1010,22 @@ span.size {
     width: 24px;
     height: 23px;
 }
+.motivation-slider-text p:last-child:before {
+    display: none;
+}
 .motivation-slider-text a {
     color: #ffffff;
     position: absolute;
     left: 50px;
+    bottom: 10px;
+}
+p.slider-link {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    padding:0;
+    position: absolute;
+    left: 39px;
     bottom: 10px;
 }
 .motivation-slider-text a:hover { color: #ffec92 }
@@ -1073,7 +1059,6 @@ span.size {
     margin: 60px auto 50px;
     width: 980px;
     height: 230px;
-    /*background: #ddd;*/
 }
 .left-info-block {
     height: 230px;
@@ -1101,8 +1086,6 @@ span.size {
 .motivation-review {
     margin: 40px auto 70px;
     width: 980px;
-    /*height: 150px;*/
-    /*background: #ccc;*/
 }
 .motivation-review h3 {
     font: 700 16px 'Open Sans',Arial,sans-serif;
@@ -1122,7 +1105,6 @@ span.size {
     height: 100%;
     width: 100%;
     border-radius: 3px;
-    /*margin: 5px 0 0 0;*/
 }
 .test-popup {
     background: white;
@@ -1167,7 +1149,6 @@ span.size {
 .test {
     position: relative;
     display: inline-block;
-    /*margin-right: 25px;*/
     height: 63px;
 }
 .test-lable {
@@ -1203,9 +1184,6 @@ span.size {
     font: 18px 'Open Sans',Arial,sans-serif;
     color: #333333;
 }
-/*.field-input-error {
-    border-color: #e17272;
-}*/
 .lable-style-text {
     font: 700 14px 'Open Sans',Arial,sans-serif;
     color: #666666;
@@ -1256,7 +1234,6 @@ span.size {
     width: 210px;
     margin-left: -210px;
     position: relative;
-    /*background: #FFACAA;*/
 }
 .right-sidebar-width {
     width: 210px;
@@ -1330,13 +1307,6 @@ span.size {
 .schools5:hover { background: url("../img/sosh535-active.png") no-repeat center center }
 /* Footer
 -----------------------------------------------------------------------------*/
-/*.footer { */
-/*width: 980px;_NO__DOTCOMMA__AFTER__*/
-/*margin: -100px auto 0;_NO__DOTCOMMA__AFTER__*/
-/*height: 100px;_NO__DOTCOMMA__AFTER__*/
-/*background: #BFF08E;_NO__DOTCOMMA__AFTER__*/
-/*position: relative;_NO__DOTCOMMA__AFTER__*/
-/*}*/
 .cl:after {
     display: block;
     visibility: hidden;
