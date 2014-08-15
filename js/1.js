@@ -7,7 +7,7 @@ $(function(){
         pause: 5000,
         controls: false,
         video: true,
-        useCSS: false,
+        useCSS: true,
         slideWidth: 1100
     });
  });

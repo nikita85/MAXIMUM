@@ -180,6 +180,9 @@ header { position: relative }
     background-size: cover;
     /*margin: 83px 0 0 0;*/
 }
+.head-margin {
+    margin: 83px 0 0 0;
+}
 .top-header {
     display: table;
     width: 100%;
@@ -195,7 +198,7 @@ header { position: relative }
 }
 .tel-moscaw,
 .tel-spb,
-.header-partner-block { padding: 15px 0 0 40px }
+.header-partner-block { padding: 18px 0 0 40px }
 .tel-moscaw,
 .tel-spb { text-align: right }
 .tel-moscaw p,
@@ -768,7 +771,7 @@ span.size {
     margin: 20px 0 30px 0;
     text-align: center;
     color: #515151;
-    font: 30px 'Open Sans',Arial,sans-serif;
+    font: 600 30px 'Open Sans',Arial,sans-serif;
 }
 .technique-block { text-align: center }
 .technique-block > h2 {
@@ -879,7 +882,7 @@ span.size {
 }
 .partners-text-block { text-align: center }
 .partners-text-block > h2 {
-    font: 20px 'Open Sans',Arial,sans-serif;
+    font: 20px/1.2 'Open Sans',Arial,sans-serif;
     color: #ff6600;
     padding: 20px 0 20px 0;
 }
@@ -904,7 +907,7 @@ span.size {
     border-right: 1px solid #e2d8d1;
 }
 .partners-block1:last-child { border-right: none }
-.partners-block1 > p { padding: 0 43px 0 43px }
+.partners-block1 > p { padding: 0 43px 0 43px; line-height: 1.3 }
 .vantage-info-block {
     display: table;
     width: 100%;
@@ -946,35 +949,35 @@ span.size {
     counter-increment: block;
     content: counter(block) "";
     position: absolute;
-    font: 400 80px 'Open Sans',Arial,sans-serif;
+    font: 600 80px 'Open Sans',Arial,sans-serif;
     right: -20px;
-    top: -25px;
+    top: -28px;
     color: #ff6600;
 }
-/*.info-block:before {*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*width: 100px;*/
-    /*height: 100px;*/
-    /*left:151px;*/
-    /*top: 0;*/
-    /*z-index: 1;*/
-    /*background: -moz-linear-gradient(top, #ffffff 0%, #e2e2e2 100%);*/
-    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e2e2e2));*/
-    /*background: -webkit-linear-gradient(top, #ffffff 0%,#e2e2e2 100%);*/
-    /*background: -o-linear-gradient(top, #ffffff 0%,#e2e2e2 100%);*/
-    /*background: -ms-linear-gradient(top, #ffffff 0%,#e2e2e2 100%);*/
-    /*background: linear-gradient(to bottom, #ffffff 0%,#e2e2e2 100%);*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e2e2',GradientType=0 );*/
-    /*opacity: 0.3;*/
-/*}*/
+.info-block:before {
+    content: "";
+    position: absolute;
+    width: 98px;
+    height: 65px;
+    left:151px;
+    top: -30px;
+    z-index: 1;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e2e2e2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e2e2e2));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e2e2e2 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#e2e2e2 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#e2e2e2 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#e2e2e2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e2e2',GradientType=0 );
+    opacity: 0.1;
+}
 .info-block span { font-weight: 700 }
 /*new page review*/
 .new-review,
 .application-text {
     margin: 0 auto;
     width: 980px;
-    font: 600 30px 'Open Sans',sans-serif;
+    font: 600 30px 'Open Sans',Arial,sans-serif;
     color: #515151;
     text-align: center;
     margin: 20px 0 0 0;
@@ -1380,7 +1383,7 @@ span.size {
     display: inline-block;
     margin-bottom: 15px;
     color: #fff;
-    font: bold 14px 'Open Sans',sans-serif;
+    font: 700 14px 'Open Sans',Arial,sans-serif;
 }
 .foot_block1 .foot_soc {
     float: left;
@@ -1409,13 +1412,13 @@ span.size {
     display: inline-block;
     margin-bottom: 15px;
     color: #fff;
-    font: bold 14px 'Open Sans',sans-serif;
+    font: 700 14px 'Open Sans',Arial,sans-serif;
 }
 .foot_block2 > ul > li,
 .foot_block2 > ul > li > a,
 .foot_block3 > ul > li > a {
     color: #ccc;
-    font: 12px 'Open Sans',sans-serif;
+    font: 12px 'Open Sans',Arial,sans-serif;
 }
 .foot_block2 > ul > li,
 .foot_block3 > ul > li {
@@ -1445,7 +1448,7 @@ ins { text-decoration: none }
     display: inline-block;
     margin-bottom: 15px;
     color: #fff;
-    font: bold 14px 'Open Sans',sans-serif;
+    font: 700 14px 'Open Sans',Arial,sans-serif;
 }
 .foot_block2 > ul > li,
 .foot_block3 > ul > li {
@@ -1472,7 +1475,7 @@ ins { text-decoration: none }
     display: inline-block;
     margin-bottom: 15px;
     color: #fff;
-    font: bold 14px 'Open Sans',sans-serif;
+    font: 700 14px 'Open Sans',Arial,sans-serif;
 }
 .foot_block4 > ul > li.app {
     margin-bottom: 15px;
@@ -1485,14 +1488,14 @@ ins { text-decoration: none }
     margin-left: 32px;
     width: 110px;
     color: #ff9600;
-    font: 10px 'Open Sans',sans-serif;
+    font: 10px 'Open Sans',Arial,sans-serif;
 }
 .foot_block4 > ul > li span {
     color: #999;
-    font: 10px 'Open Sans',sans-serif;
+    font: 10px 'Open Sans',Arial,sans-serif;
 }
 .foot_block4 > ul > li:hover span { color: #ff9600 !important }
-.foot_block4 > ul > li span > em { font: bold 13px 'Open Sans',sans-serif }
+.foot_block4 > ul > li span > em { font: bold 13px 'Open Sans',Arial,sans-serif }
 .foot_block4 > ul > li.android {
     margin-bottom: 25px;
     width: 155px;
@@ -1504,11 +1507,11 @@ ins { text-decoration: none }
     margin-left: 32px;
     width: 110px;
     color: #ff9600;
-    font: 10px 'Open Sans',sans-serif;
+    font: 10px 'Open Sans',Arial,sans-serif;
 }
 .foot_block4 > ul > li span {
     color: #999;
-    font: 10px 'Open Sans',sans-serif;
+    font: 10px 'Open Sans',Arial,sans-serif;
 }
 .foot_block4 > ul > li span > em { font: bold 13px 'Open Sans',sans-serif }
 .foot_block4 > p { color: #ccc }
@@ -1526,11 +1529,11 @@ ins { text-decoration: none }
     display: inline-block;
     margin-bottom: 15px;
     color: #fff;
-    font: bold 14px 'Open Sans',sans-serif;
+    font: bold 14px 'Open Sans',Arial,sans-serif;
 }
 .foot_block5 > p {
     color: #ccc;
-    font: 12px 'Open Sans',sans-serif;
+    font: 12px 'Open Sans',Arial,sans-serif;
 }
 .foot_block5  span { font-weight: 700 }
 .foot_block6 {
@@ -1542,12 +1545,12 @@ ins { text-decoration: none }
 }
 .foot_block6 a {
     color: #fff;
-    font: bold 14px 'Open Sans',sans-serif;
+    font: bold 14px 'Open Sans',Arial,sans-serif;
 }
 .foot_block6 a:hover {
     color: #ff9600;
     text-decoration: none;
-    font: bold 14px 'Open Sans',sans-serif;
+    font: bold 14px 'Open Sans',Arial,sans-serif;
 }
 .fixed_buttom_bg {
     position: fixed;
