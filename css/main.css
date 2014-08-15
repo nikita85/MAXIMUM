@@ -409,6 +409,30 @@ ul.nav a {
     color: #ff6600;
     text-decoration: underline;
 }
+.target-programm ul {
+     /*list-style: decimal outside none;*/
+     margin: 20px 50px 0 40px;
+}
+.target-programm li:after {
+    color: #515151;
+    content: counter(block, decimal) ".";
+    counter-increment: block;
+    font:700 18px 'Open Sans',Arial,sans-serif;
+    position: absolute;
+    left:-5px;
+    top: -2px;
+}
+.target-programm li {
+    position: relative;
+    font: 700 15px 'Open Sans',Arial,sans-serif;
+    color: #333333;
+    padding: 0 0 0 20px;
+    margin: 0 0 15px;
+}
+.target-programm li span {
+    font: 13px 'Open Sans',Arial,sans-serif;
+    color: #333333;
+}
 /*first page*/
 .wrapper-events { /*text-align: center;_NO__DOTCOMMA__AFTER__*/ }
 .content-events { margin: 20px 0 0 0 }
@@ -456,7 +480,7 @@ ul.nav a {
 }
 .master-klass-block a:hover { color: #ff6600 }
 /*events master class popup*/
-.events-popup {
+.events-popup, .target-programm {
     width: 570px;
     height: 435px;
     display: none;
@@ -464,10 +488,13 @@ ul.nav a {
     border: 4px solid #fe7324;
     border-radius: 6px;
 }
+.target-programm {
+    height: 370px;
+}
 .height-block-popup {
     height: 550px;
 }
-.events-popup h3 {
+.events-popup h3, .target-programm h3 {
     font: 600 25px 'Open Sans',Arial,sans-serif;
     color: #ff6600;
     padding: 30px 0 0 35px;
@@ -511,6 +538,11 @@ span.size {
     background: url("../img/okk.png") no-repeat center center;
     width: 14px;
     height: 14px;
+}
+.participation_block {
+    margin:0 auto;
+    display: inline-block;
+    width: 50%;
 }
 .master-klass-block:hover { border: 3px solid #ff6600 }
 .master-klass-block:last-child { margin-right: 0 }
