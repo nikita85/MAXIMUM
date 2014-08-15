@@ -130,7 +130,9 @@ nav,
 section,
 summary { display: block }
 body {
-    font: 12px/18px Arial, sans-serif;
+    margin:0;
+    background:#fff;
+    font: 12px/18px 'Open Sans',Arial, sans-serif;
     width: 100%;
     height: 100%;
     counter-reset: block;
@@ -1019,16 +1021,17 @@ span.size {
     position: relative;
     font: italic 600 20px 'Open Sans',Arial,sans-serif;
     color: #ffec92;
-    padding: 40px 40px 0 30px;
+    padding: 40px 40px 0 40px;
     line-height: 1.2;
 }
 .motivation-slider-text p:before {
     position: absolute;
-    top: 22px;
+    top: 40px;
     left: 0;
-    content: " ” ";
-    color: #ffec92;
-    font: 600 50px 'Open Sans',Arial,sans-serif;
+    content: " ";
+    background: url("../img/big_quotes.png") no-repeat center center;
+    width: 24px;
+    height: 23px;
 }
 .motivation-slider-text a {
     color: #ffffff;
@@ -1078,7 +1081,7 @@ span.size {
     display: inline-block;
 }
 .left-info-block h2 {
-    font: 600 20px 'Open Sans',Arial,sans-serif;
+    font: 600 20px/1.2 'Open Sans',Arial,sans-serif;
     color: #515151;
     padding: 30px 50px 20px;
 }
