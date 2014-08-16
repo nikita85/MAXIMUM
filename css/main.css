@@ -494,6 +494,9 @@ ul.nav a {
 .height-block-popup {
     height: 550px;
 }
+.middle-block-popup {
+    height: 195px;
+}
 .events-popup h3, .target-programm h3 {
     font: 600 25px 'Open Sans',Arial,sans-serif;
     color: #ff6600;
@@ -511,7 +514,7 @@ ul.nav a {
     padding: 20px 45px 0 35px;
 }
 .events-popup p span {
-    font: 700 15px 'Open Sans',Arial,sans-serif;
+    font: 700 15px/1.2 'Open Sans',Arial,sans-serif;
     color: #333333;
 }
 span.first-block {
@@ -540,9 +543,33 @@ span.size {
     height: 14px;
 }
 .participation_block {
-    margin:0 auto;
+    margin: 10px auto;
     display: inline-block;
-    width: 50%;
+    vertical-align: top;
+    width: 42%;
+    border-right: 1px solid #e2d8d1;
+}
+.participation_block:last-child {
+    border: none;
+}
+.text-left {
+    font: 15px 'Open Sans',Arial,sans-serif;
+    color: #515151;
+    padding: 15px 20px 0 35px;
+}
+.text-left a {
+    color: #ff6600;
+    text-decoration: underline !important;
+    font-weight: 700;
+}
+.text-right {
+    font: 15px 'Open Sans',Arial,sans-serif;
+    color: #515151;
+    padding: 15px 0 0 25px;
+}
+.text-right span {
+    font: 600 25px 'Open Sans',Arial,sans-serif;
+    color: #515151;
 }
 .master-klass-block:hover { border: 3px solid #ff6600 }
 .master-klass-block:last-child { margin-right: 0 }
