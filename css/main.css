@@ -360,6 +360,7 @@ ul.nav a {
     overflow: hidden;
 }
 .content { padding: 0 270px 0 0 }
+.review-page-content { padding: 0 470px 0 0; margin: 0 0 80px 0}
 .training-main-block {
     width: 735px;
     height: 390px;
@@ -436,7 +437,7 @@ ul.nav a {
 /*first page*/
 .wrapper-events { /*text-align: center;_NO__DOTCOMMA__AFTER__*/ }
 .content-events { margin: 20px 0 0 0 }
-.content-events h1, .technique, .reviews-results, .vantage-text-block > h2, .application-text, .new-review {
+.content-events h1, .technique, .reviews-results, .vantage-text-block > h2, .application-text, .new-review, .review-page-title h1 {
     font: 600 30px 'Open Sans',Arial,sans-serif;
     color: #515151;
     text-align: center;
@@ -521,6 +522,7 @@ span.first-block {
     color: #ff6600 !important;
     font-size: 13px!important;
     text-transform: uppercase;
+    font-weight: normal !important;
 }
 span.size {
     font-size: 13px!important;
@@ -537,7 +539,7 @@ span.size {
     display: block;
     content: "";
     top: 13px;
-    left: 46px;
+    left: 43px;
     background: url("../img/okk.png") no-repeat center center;
     width: 14px;
     height: 14px;
@@ -565,7 +567,7 @@ span.size {
 .text-right {
     font: 15px 'Open Sans',Arial,sans-serif;
     color: #515151;
-    padding: 15px 0 0 25px;
+    padding: 15px 0 0 20px;
 }
 .text-right span {
     font: 600 25px 'Open Sans',Arial,sans-serif;
@@ -1126,6 +1128,7 @@ p.slider-link {
     border-radius: 5px;
     text-align: center;
     display: inline-block;
+    float: left;
 }
 .left-info-block h2 {
     font: 600 20px/1.2 'Open Sans',Arial,sans-serif;
@@ -1286,6 +1289,148 @@ p.slider-link {
     left: 152px;
     position: absolute;
 }
+/*REVIEW-PAGE STYLES*/
+.review-page-wrap {
+    width: 100%;
+    position: relative;
+    background: #ccc;
+}
+.review-page-breadcrumbs-wrap {
+    margin: 0 auto;
+    width: 980px;
+   /* height: 40px;*/
+    /*background: #ccc;*/
+}
+.review-page-breadcrumbs a:before {
+    content: "/";
+    font: 12px 'Open Sans',Arial,sans-serif;
+    color: #515151;
+    display: inline-block;
+    padding: 0 8px 0 8px;
+}
+.review-page-breadcrumbs a:first-child:before {
+    display: none;
+}
+.review-page-breadcrumbs a {
+    position: relative;
+   font: 12px 'Open Sans',Arial,sans-serif;
+   color: #515151;
+   text-decoration: underline !important;
+}
+.reviews {
+    /*background: #ddd;*/
+    width: 470px;
+   /* height: 153px;*/
+    margin: 0 0 30px 0;
+}
+.review-vatars {
+    width: 105px;
+    /*height: 180px;*/
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font: 700 12px 'Open Sans',Arial,sans-serif;
+    color: #515151;
+    margin: 0 15px 0 0;
+}
+.right-side {
+    margin: 0 0 0 15px;
+}
+.reviews-content {
+    position: relative;
+    background: #f5f5f5;
+    border: 1px solid #cfbbad;
+    width: 345px;
+    /*height: 150px;*/
+    border-radius: 5px;
+    display: inline-block;
+    /*float: right;*/
+}
+.reviews-content p:before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: url("../img/small_quotes.png") no-repeat left top;
+    display: inline-block;
+    position: absolute;
+    left: 14px;
+    top: 25px;
+}
+.reviews-content p {
+    margin: 0 auto;
+    font: italic 13px/1.5 'Open Sans',Arial,sans-serif;
+    color: #333333;
+    padding: 20px 0 20px 0;
+    width: 270px;
+    border-bottom: 1px solid #cfbbad;
+}
+.reviews-content p:last-child {
+    border-bottom: none;
+}
+.reviews-content p:nth-of-type(1) {
+    padding: 20px 0 10px 0;
+}
+.reviews-content p:nth-of-type(2) {
+    padding: 10px 0 10px 0;
+}
+.reviews-content:after,
+.reviews-content:before {
+    right: 100%;
+    top: 60px;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.reviews-content:after {
+    border-color: rgba(207, 187, 173, 0);
+    border-right-color: #f5f5f5;
+    border-width: 10px;
+    margin-top: -37px;
+}
+.reviews-content:before {
+    border-color: rgba(207, 187, 173, 0);
+    border-right-color: #cfbbad;
+    border-width: 12px;
+    margin-top: -39px;
+}
+
+
+.reviews-content-right {
+    position: relative;
+    background: #f5f5f5;
+    border: 1px solid #cfbbad;
+    width: 345px;
+    /*height: 150px;*/
+    border-radius: 5px;
+    display: inline-block;
+    /*float: right;*/
+}
+.reviews-content-right:after,
+.reviews-content-right:before {
+    left: 100%;
+    top: 60px;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.reviews-content-right:after {
+    border-color: rgba(207, 187, 173, 0);
+    border-left-color: #f5f5f5;
+    border-width: 10px;
+    margin-top: -37px;
+}
+.reviews-content-right:before {
+    border-color: rgba(207, 187, 173, 0);
+    border-left-color: #cfbbad;
+    border-width: 12px;
+    margin-top: -39px;
+}
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
 .right-sidebar {
@@ -1297,6 +1442,10 @@ p.slider-link {
 .right-sidebar-width {
     width: 210px;
     margin-left: -220px;
+}
+.review-right-sidebar {
+    width: 470px;
+    margin-left: -470px;
 }
 .school-participants,
 .school-participants-width {
