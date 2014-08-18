@@ -1208,22 +1208,22 @@ p.slider-link {
     display: none;
 }
 .small-error { margin-right: 10px }
-.test {
+.input-block {
     position: relative;
     display: inline-block;
     height: 63px;
 }
-.test-lable {
+.field-name {
     display: inline-block;
     height: 45px;
     line-height: 46px;
     vertical-align: top;
 }
-.test22 {
+.field-block {
     display: inline-block;
     margin: 0 0 0 25px;
 }
-.test:last-child { margin: 0 }
+.input-blockt:last-child { margin: 0 }
 .big-field-input {
     outline: none;
     border: none;
