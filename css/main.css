@@ -212,11 +212,11 @@ header { position: relative }
 /*header menu*/
 .header-bottom { margin: 24px 0 20px 0 }
 .header-nav { width: 100% }
-ul.nav {
+.nav {
     width: 100%;
     display: table;
 }
-ul.nav li {
+.nav li {
     display: table-cell;
     position: relative;
     background: #ff8800;
@@ -225,10 +225,10 @@ ul.nav li {
     border-radius: 6px;
     vertical-align: middle;
 }
-ul.nav li:nth-last-of-type(3) { vertical-align: middle }
-ul.nav li:hover,
-ul.nav li.active { background: #a89284 }
-ul.nav li:before {
+.nav li:nth-last-of-type(3) { vertical-align: middle }
+.nav li:hover,
+.active { background: #a89284 }
+.nav li:before {
     background: url("../img/point.png") no-repeat center center;
     height: 18px;
     width: 16px;
@@ -240,8 +240,8 @@ ul.nav li:before {
     text-indent: -9999px;
     z-index: 1;
 }
-ul.nav li:first-child:before { display: none }
-ul.nav li:after {
+.nav li:first-child:before { display: none }
+.nav li:after {
     background: #ffffff;
     content: "";
     display: block;
@@ -251,8 +251,8 @@ ul.nav li:after {
     top: 1px;
     width: 2px;
 }
-ul.nav li:first-child:after { display: none }
-ul.nav a {
+.nav li:first-child:after { display: none }
+.nav a {
     display: block;
     text-align: center;
     font: 15px/1.2 'Open Sans',Arial,sans-serif;

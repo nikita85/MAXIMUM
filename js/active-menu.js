@@ -1,4 +1,9 @@
-$(document).ready(function(){
-    var link = window.location.pathname;
-    $('.nav li a[href="'+link+'"]').parent().addClass('active');
+$(function () { 
+    $('.nav li').each(function () {
+        var location = window.location.href;
+        var link = this.href; 
+        if(location == link) {
+            $(this).addClass('active');
+        }
     });
+});
