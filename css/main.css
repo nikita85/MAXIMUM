@@ -211,53 +211,56 @@ header { position: relative }
 }
 /*header menu*/
 .header-bottom { margin: 24px 0 20px 0 }
-.header-nav { width: 100% }
-.nav {
+.header-nav{
     width: 100%;
     display: table;
 }
+.nav {
+    display: table-row;
+}
 .nav li {
     display: table-cell;
-    position: relative;
-    background: #ff8800;
-    width: 243px;
-    height: 52px;
-    border-radius: 6px;
-    vertical-align: middle;
+    float: none;
 }
-.nav li:nth-last-of-type(3) { vertical-align: middle }
-.nav li:hover,
-.active { background: #a89284 }
-.nav li:before {
+.nav li a {
+    display: block;
+    position: relative;
+    padding: 8px 0 12px 0;
+    background: #ff8800;
+    font: 15px/1.2 'Open Sans',Arial,sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /*height: 52px;*/
+    width: 243px;
+}
+.nav li a:before {
     background: url("../img/point.png") no-repeat center center;
     height: 18px;
     width: 16px;
     content: counter(test, decimal) "";
-    /*counter-increment: test;*/
-    left: -8px;
-    top: 17px;
+    counter-increment: test;
+    left: -9px;
+    top: 34%;
     position: absolute;
     text-indent: -9999px;
     z-index: 1;
 }
-.nav li:first-child:before { display: none }
-.nav li:after {
-    background: #ffffff;
-    content: "";
-    display: block;
-    height: 100%;
-    left: -1px;
-    position: absolute;
-    top: 1px;
-    width: 2px;
+.nav li:first-child a:before { display: none }
+.nav a:hover, .nav .active {
+    background: #a89284;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
-.nav li:first-child:after { display: none }
-.nav a {
-    display: block;
-    text-align: center;
-    font: 15px/1.2 'Open Sans',Arial,sans-serif;
-    color: #ffffff;
-    text-decoration: none;
+.nav li:nth-last-of-type(3) a {
+    padding: 17px 0 21px 0;
+    position: relative;
+    top:9px;
 }
 /*header-ribbon*/
 .header-ribbon {
@@ -268,7 +271,7 @@ header { position: relative }
     font: 22px 'Open Sans',Arial,sans-serif;
     color: #ffffff;
     position: absolute;
-    top: 227px;
+    top: 238px;
     left: 0;
     right: 0;
     margin: auto;
@@ -1208,22 +1211,22 @@ p.slider-link {
     display: none;
 }
 .small-error { margin-right: 10px }
-.input-block {
+.test {
     position: relative;
     display: inline-block;
     height: 63px;
 }
-.field-name {
+.test-lable {
     display: inline-block;
     height: 45px;
     line-height: 46px;
     vertical-align: top;
 }
-.field-block {
+.test22 {
     display: inline-block;
     margin: 0 0 0 25px;
 }
-.input-blockt:last-child { margin: 0 }
+.test:last-child { margin: 0 }
 .big-field-input {
     outline: none;
     border: none;
