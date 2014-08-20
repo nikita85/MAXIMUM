@@ -1202,7 +1202,7 @@ p.slider-link {
     text-align: right;
     margin: 30px 70px 20px 0;
 }
-.fieldss { margin: 0 0 10px }
+.fields-block { margin: 0 0 10px }
 .error {
     margin-right: 317px;
     color: #e17272;
@@ -1211,22 +1211,22 @@ p.slider-link {
     display: none;
 }
 .small-error { margin-right: 10px }
-.test {
+.fields {
     position: relative;
     display: inline-block;
     height: 63px;
 }
-.test-lable {
+.field-name{
     display: inline-block;
     height: 45px;
     line-height: 46px;
     vertical-align: top;
 }
-.test22 {
+.small-field {
     display: inline-block;
     margin: 0 0 0 25px;
 }
-.test:last-child { margin: 0 }
+.fields:last-child { margin: 0 }
 .big-field-input {
     outline: none;
     border: none;
