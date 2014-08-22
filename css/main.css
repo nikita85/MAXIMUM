@@ -1225,10 +1225,16 @@ p.slider-link {
 }
 .small-field {
     display: inline-block;
-    margin: 0 0 0 25px;
+    /*padding: 0 0 0 38px;*/
+}
+.small-field:first-child {
+    display: inline-block;
+    /*padding: 0 0 0 38px;*/
+    float: left;
+    margin: 0 0 0 51px;
 }
 .fields:last-child { margin: 0 }
-.big-field-input {
+.big-field-input, .small-field-input  {
     outline: none;
     border: none;
     border: 1px solid #cccccc;
@@ -1238,17 +1244,15 @@ p.slider-link {
     padding: 0 0 0 10px;
     font: 18px 'Open Sans',Arial,sans-serif;
     color: #333333;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .small-field-input {
-    outline: none;
-    border: none;
-    border: 1px solid #cccccc;
     width: 180px;
-    height: 43px;
-    background: #ffffff;
-    padding: 0 0 0 10px;
-    font: 18px 'Open Sans',Arial,sans-serif;
-    color: #333333;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .lable-style-text {
     font: 700 14px 'Open Sans',Arial,sans-serif;
@@ -1267,7 +1271,7 @@ p.slider-link {
 ::-webkit-input-placeholder {
     color: #999999;
     font: 18px 'Open Sans',Arial,sans-serif;
-    line-height: 40px;
+    line-height: 25px;
 }
 ::-moz-placeholder {
     color: #999999;
