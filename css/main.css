@@ -399,23 +399,23 @@ header { position: relative }
     margin: 20px 0 0 0;
     padding: 0 8px;
 }
-.training-block p, .training-block > a  {
+.training-block p, .training-block  a  {
     font: 13px 'Open Sans',Arial,sans-serif;
     color: #333333;
     height: 90px;
     padding: 0 8px;
 }
-.training-block > a {
-    -moz-text-decoration-line: underline !important;
-    -moz-text-decoration-style: dashed !important;
+.training-block  a {
+    border-bottom: 1px dashed #333333;
+    padding:0;
+
 }
 .training-block a:hover { color: #ff6600 }
-.training-block > p > a {
+.training-block  p  a {
     color: #ff6600;
-    text-decoration: underline;
+    border-bottom: 1px dashed #ff6600;
 }
 .target-programm ul {
-     /*list-style: decimal outside none;*/
      margin: 20px 50px 0 40px;
 }
 .target-programm li:after {
@@ -480,10 +480,9 @@ header { position: relative }
 .motivation-slider-text a {
     font: 13px 'Open Sans',Arial,sans-serif;
     color: #333333;
-    -moz-text-decoration-line: underline !important;
-    -moz-text-decoration-style: dashed !important;
+    border-bottom: 1px dashed #333333;
 }
-.master-klass-block a:hover { color: #ff6600 }
+.master-klass-block a:hover { color: #ff6600; border-bottom: 1px dashed #ff6600 }
 /*events master class popup*/
 .events-popup, .target-programm {
     width: 570px;
@@ -1083,6 +1082,7 @@ span.size {
     position: absolute;
     left: 50px;
     bottom: 10px;
+    border-color: #fff;
 }
 p.slider-link {
     color: #ffffff;
