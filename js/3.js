@@ -10,3 +10,10 @@ $(document).ready(function(){
         slidesToScroll: 1
     });
 });
+$(document).ready(function(){
+    $('.review-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+    });
+});

@@ -880,20 +880,25 @@ span.size {
     height: 50px;
 }
 .review-icon {
-    width: 140px;
-    height: 180px;
+    width: 150px !important;
+    height: 180px !important;
     display: inline-block;
+    float: left;
     vertical-align: bottom;
     text-align: center;
     font: 700 12px 'Open Sans',Arial,sans-serif;
     color: #515151;
+    margin-right: 20px;
+}
+.review-icon img {
+    display: inline-block;
 }
 .review-content {
     position: relative;
     background: #fff;
     border: 1px solid #cfbbad;
-    width: 739px;
-    height: 116px;
+    width: 730px !important;
+    height: 116px !important;
     border-radius: 5px;
     display: inline-block;
     float: right;
@@ -1891,4 +1896,11 @@ ins { text-decoration: none }
     width: 313px;
     height: 40px;
     background: url("../img/fixed_buttom_block_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+/*review slider*/
+.review-slider-wrapper {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
 }
